@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test task Djini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="wrapper-header">
+        <div class="container header">
+            <div class="row">
+                <div class="col-md-5 col-lg-4 mobile">
+                    <ul class="nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Videos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Podcasts</a>
+                        </li>
+                    </ul>
+                    <div class="user-menu">
+                        <div class="dropdown language">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                English
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Ukraine</a>
+                              <a class="dropdown-item" href="#">German</a>
+                              <a class="dropdown-item" href="#">Poland</a>
+                            </div>
+                        </div>
+                        <a href="#" class="link-sign-in">Sign in</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-5 col-xl-6">
+                    <div class="search-header">
+                        <div class="input-group">
+                            <div class="icon-search"></div>
+                            <input type="text" class="form-control" placeholder="Search for anything..." aria-label="Search for anything..." aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2">
+                    <div class="user-menu">
+                        <div class="dropdown language">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                English
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Ukraine</a>
+                              <a class="dropdown-item" href="#">German</a>
+                              <a class="dropdown-item" href="#">Poland</a>
+                            </div>
+                        </div>
+                        <a href="#" class="link-sign-in">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="wrapper-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <aside class="sidebar">
+                            <ul class="nav nav-sidebar">
+                                <li class="nav-item all-photos">
+                                    <a class="nav-link active" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15 6.5C13.6193 6.5 12.5 7.61929 12.5 9C12.5 10.3807 13.6193 11.5 15 11.5C16.3807 11.5 17.5 10.3807 17.5 9C17.5 7.61929 16.3807 6.5 15 6.5Z" fill="#666666"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3H21V21H18.5266L18.4945 21.0002H5.5L5.46787 21H3V3ZM19 12.8362C17.8552 13.898 16.7044 14.4537 15 14.4537C13.0944 14.4537 11.6208 13.2859 10.1527 11.7048C9.15108 10.6262 7.51491 10.4335 6.29018 11.25L6.26758 11.2651L5 12.2134V5H19V12.8362Z" fill="#666666"/>
+                                        </svg>
+                                        All photos
+                                    </a>
+                                </li>
+                                <li class="nav-item selfies">
+                                    <a class="nav-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 12C17.5 15.0376 15.0376 17.5 12 17.5C8.96243 17.5 6.5 15.0376 6.5 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#666666" stroke-width="2"/>
+                                            <path d="M11 9C11 9.82843 10.3284 10.5 9.5 10.5C8.67157 10.5 8 9.82843 8 9C8 8.17157 8.67157 7.5 9.5 7.5C10.3284 7.5 11 8.17157 11 9Z" fill="#666666"/>
+                                            <path d="M16 9C16 9.82843 15.3284 10.5 14.5 10.5C13.6716 10.5 13 9.82843 13 9C13 8.17157 13.6716 7.5 14.5 7.5C15.3284 7.5 16 8.17157 16 9Z" fill="#666666"/>
+                                        </svg>                                            
+                                        Selfies
+                                    </a>
+                                </li>
+                                <li class="nav-item recent">                                       
+                                    <a class="nav-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 8V12L14.5 14.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#666666" stroke-width="2" stroke-linecap="square"/>
+                                        </svg> 
+                                        Recent
+                                    </a>
+                                </li>
+                                <li class="nav-item delete">                                       
+                                    <a class="nav-link" href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 19L3.00221 19.0665L3.06445 20H4V19ZM16 19V20H16.9356L16.9978 19.0665L16 19ZM1 3H0V5H1V3ZM19 5H20V3H19V5ZM9 9V8H7V9H9ZM7 14V15H9V14H7ZM13 9V8H11V9H13ZM11 14V15H13V14H11ZM2.00221 4.06652L3.00221 19.0665L4.99779 18.9335L3.99779 3.93348L2.00221 4.06652ZM4 20H16V18H4V20ZM16.9978 19.0665L17.9978 4.06652L16.0022 3.93348L15.0022 18.9335L16.9978 19.0665ZM17 3H3V5H17V3ZM1 5H3V3H1V5ZM17 5H19V3H17V5ZM7 9V14H9V9H7ZM11 9V14H13V9H11ZM10 2C11.3965 2 12.5725 2.95512 12.9055 4.24926L14.8424 3.75074C14.2874 1.59442 12.3312 0 10 0V2ZM7.09445 4.24926C7.42754 2.95512 8.60349 2 10 2V0C7.66883 0 5.71258 1.59442 5.15758 3.75074L7.09445 4.24926Z" fill="#666666"/>
+                                        </svg> 
+                                        Deleted
+                                    </a>
+                                  </li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="heading-page">
+                                        <h1 class="title-page">All Photos</h1>
+                                        <div class="sort">
+                                            <button type="button" class="btn btn-dark">Newest</button>
+                                            <button type="button" class="btn btn-light">Latest</button>
+                                        </div>
+                                    </div>
+                                    <div class="count-items">150 items</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="./image/category-1.png" class="card-img-top" alt="category-1">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Heading</h4>
+                                            <p class="card-text" id="card-text">Here goes some sample, example text that is relatively short.</p>
+                                            <div class="card-show-more">
+                                                <button class="btn btn-light show">Show more...</button>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottoms">
+                                            <button class="btn btn-warning">Save to collection</button>
+                                            <button class="btn btn-light">Share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="./image/category-2.png" class="card-img-top" alt="category-2">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Heading</h4>
+                                            <p class="card-text" id="card-text">
+                                                And here full text doesn’t fit, and at the very end of it we should show
+                                                <span id="dots">...</span>
+                                                <span id="more">And here full text doesn’t fit, and at the very end of it we should show, 
+                                                    And here full text doesn’t fit, and at the very end of it we should show, And here full text doesn’t fit, and at the very end of it we should show, 
+                                                    And here full text doesn’t fit, and at the very end of it we should show, 
+                                                    And here full text doesn’t fit, and at the very end of it we should show
+                                                </span>
+                                            </p>
+                                            <div class="card-show-more">
+                                                <button onclick="ShowMore()" id="btnShow" class="btn btn-light show">Show more...</button>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottoms">
+                                            <button class="btn btn-warning">Save to collection</button>
+                                            <button class="btn btn-light">Share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="./image/category-3.png" class="card-img-top" alt="category-3">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Heading</h4>
+                                            <p class="card-text" id="card-text">Here goes some sample, example text that is relatively short.</p>
+                                            <div class="card-show-more">
+                                                <button id="btnShow" class="btn btn-light show">Show more...</button>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottoms">
+                                            <button class="btn btn-warning">Save to collection</button>
+                                            <button class="btn btn-light">Share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="./image/category-4.png" class="card-img-top" alt="category-4">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Heading</h4>
+                                            <p class="card-text" id="card-text">Here goes some sample, example text that is relatively short.</p>
+                                            <div class="card-show-more">
+                                                <button id="btnShow" class="btn btn-light show">Show more...</button>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottoms">
+                                            <button class="btn btn-warning">Save to collection</button>
+                                            <button class="btn btn-light">Share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
