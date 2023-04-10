@@ -1,8 +1,3 @@
-let dots = document.getElementById("dots");
-let buttons = document.getElementsByClassName("show");
-
-console.log(buttons)
-
 function ShowMore() {
   let dots = document.getElementById("dots");
   let moreText = document.getElementById("more");
@@ -20,13 +15,3 @@ function ShowMore() {
 }
 
 ShowMore()
-
-let test = buttons.className =+ 'hidden' 
-console.log(test)
-
-// for (button of buttons) {
-//   console.log(button)
-// }
-// if(dots) {
-//   buttons.classList.add("test")
-// }
