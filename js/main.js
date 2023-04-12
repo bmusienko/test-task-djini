@@ -1,17 +1,31 @@
-function ShowMore() {
-  let dots = document.getElementById("dots");
-  let moreText = document.getElementById("more");
-  let btnText = document.getElementById("btnShow");
+let btn_show_more = document.getElementsByClassName('show-more')
+let btn_show_less = document.getElementsByClassName('show-less')
 
-  if (moreText.style.display === "none") {
-    dots.style.display = "none";
-    btnText.innerHTML = "Show less..."; 
-    moreText.style.display = "inline";
-  } else {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Show more..."; 
-    moreText.style.display = "none";
+Array.from(btn_show_more).forEach(function(element) {
+  let text = element.parentElement.parentElement.firstElementChild.getAttribute('data-full-text')
+  element.parentElement.parentElement.firstElementChild.innerHTML = text.slice(0, 85)
+  element.addEventListener("click", function()
+    {
+      this.parentElement.parentElement.firstElementChild.innerHTML = this.parentElement.parentElement.firstElementChild.getAttribute('data-full-text')
+      this.parentElement.lastElementChild.classList.remove('hide')
+      this.classList.add('hide')
+    }, false);
+  if(text.length <= 85) {
+    element.classList.add('hide')
   }
-}
 
-ShowMore()
+});
+
+Array.from(btn_show_less).forEach(function(element) {
+  let text = element.parentElement.parentElement.firstElementChild.getAttribute('data-full-text')
+  element.addEventListener("click", function()
+    {
+      this.parentElement.parentElement.firstElementChild.innerHTML = text.slice(0, 85)
+      this.parentElement.firstElementChild.classList.remove('hide')
+      this.classList.add('hide')
+    }, false);
+  if(text.length <= 85) {
+    element.classList.add('hide')
+  }
+  
+});

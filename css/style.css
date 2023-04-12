@@ -292,7 +292,7 @@ button.btn-light:hover {
 .card .card-text {
     color: var(--gray-dark);
     margin-bottom: 8px;
-    overflow: hidden;
+    min-height: 48px;
 }
 .card .card-body {
     padding: 24px 16px 20px;
@@ -382,4 +382,8 @@ button.btn-light:hover {
 }
 .nav-sidebar .nav-link.active path {
     fill: var(--white);
+}
+
+.hide {
+    display: none;
 }
